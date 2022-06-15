@@ -1,13 +1,13 @@
 ---
 
-title: module name here
+title: My module
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "API details."
-description: "API details."
+summary: "details, details, details."
+description: "details, details, details."
 nb_path: "00_core.ipynb"
 ---
 <!--
@@ -22,38 +22,6 @@ nb_path: "00_core.ipynb"
 
 <div class="container" id="notebook-container">
         
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="say_hello" class="doc_header"><code>say_hello</code><a href="https://github.com/dpwinter/nbdev_tutorial/tree/master/nbdev_tutorial/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>say_hello</code>(<strong><code>to</code></strong>)</p>
-</blockquote>
-<p>Say hello to somebody</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -161,6 +129,174 @@ nb_path: "00_core.ipynb"
     </div>
 </div>
 </div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Add-a-class">Add a class<a class="anchor-link" href="#Add-a-class"> </a></h1><p>Create a class in <code>00_core.ipynb</code> as follows:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="HelloSayer" class="doc_header"><code>class</code> <code>HelloSayer</code><a href="https://github.com/dpwinter/nbdev_tutorial/tree/master/nbdev_tutorial/core.py#L6" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>HelloSayer</code>(<strong><code>to</code></strong>)</p>
+</blockquote>
+<p>Say hello <code>to</code> using <a href="/nbdev_tutorial/core.html#say_hello"><code>say_hello</code></a></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This will automatically appear in the docs like this:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>But class methods are <strong>not</strong> documented, in this case we can use this:</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="HelloSayer.say" class="doc_header"><code>HelloSayer.say</code><a href="https://github.com/dpwinter/nbdev_tutorial/tree/master/nbdev_tutorial/core.py#L10" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>HelloSayer.say</code>()</p>
+</blockquote>
+<p>Do the saying</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Finally, add some examples/tests</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">o</span> <span class="o">=</span> <span class="n">HelloSayer</span><span class="p">(</span><span class="s1">&#39;Alexis&#39;</span><span class="p">)</span>
+<span class="n">o</span><span class="o">.</span><span class="n">say</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Hello Alexis!&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also write math!!:
+{% raw %}
+$$\sum_{i=1}^{k+1}i$$
+{% endraw %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Compared to the regular latex inline: $\sum_{i+1}^{k+1}i$.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="say_hello" class="doc_header"><code>say_hello</code><a href="https://github.com/dpwinter/nbdev_tutorial/tree/master/nbdev_tutorial/core.py#L15" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>say_hello</code>(<strong><code>to</code></strong>)</p>
+</blockquote>
+<p>Say hello to somebody</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 </div>
     {% endraw %}
